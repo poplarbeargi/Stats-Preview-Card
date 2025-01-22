@@ -9,38 +9,50 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Stats preview card component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  
 </head>
 
 <body>
-  <main class="container">
-    <div class="text-container">
-      <h1 class="title">Get <span>insights</span> that help your business grow.</h1>
-      <p class="paragraph">
-        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-        experience, and overall efficiency.
-      </p>
-      <div class="highlights">
-        <p>
-          <span class="highlight-number">10K+</span>
-          <span class="highlight-text">COMPANIES</span>
+  <main class="container flex">
+    <div class="container-column flex">
+      <div class="text-container">
+        <h1 class="title">Get <span>insights</span> that help your business grow.</h1>
+        <p class="desc">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+          experience, and overall efficiency.
         </p>
-        <p>
-          <span class="highlight-number">314</span>
-          <span class="highlight-text">TEMPLATES</span>
-        </p>
-        <p>
-          <span class="highlight-number">12M+</span>
-          <span class="highlight-text">QUERIES</span>
-        </p>
+        <div class="stats flex">
+          <div class="stat-item">
+            <p class="stat-number">10K+</p>
+            <p class="stat-desc">COMPANIES</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number">314</p>
+            <p class="stat-desc">TEMPLATES</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number">12M+</p>
+            <p class="stat-desc">QUERIES</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="img-container">
-      <img src="images/image-header-desktop.jpg" alt="People Working" class="responsive-img">
-      <div class="overlay"></div>
+      <div class="img-container">
+          <img src="images/image-header-desktop.jpg" alt="People Working" class="responsive-img">
+          <div class="overlay"></div>
+       </div>
     </div>
   </main>
 
-  <script src="main.js">
-  </script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  
 </body>
+
 </html>
